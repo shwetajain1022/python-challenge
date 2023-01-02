@@ -73,7 +73,7 @@ for row in list_election:
 i=0
 #printing the election summary in the terminal and file
 with open(results_txt, 'w') as r:
-    print("Election Summary")
+    print("Election Results")
     print(f"-----------------------------------------------------------------------------")
     print(f"Total Votes: {totalVotes}")
     print(f"-----------------------------------------------------------------------------")
