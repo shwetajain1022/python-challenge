@@ -67,8 +67,8 @@ with open(results_txt, 'w') as r:
     greatestIncreaseMonthInProfitLosses = noOfMonths[greatestProfitLossesKey]
 
     #Printing the greatest change in the profit and loss
-    print(f"Greatest Increase in Profits: {greatestIncreaseMonthInProfitLosses}  (${str(greatestIncreaseInProfitLosses)})\n")
-    r.write("Greatest Increase in Profits: "+str(greatestIncreaseMonthInProfitLosses)+"  ($"+str(greatestIncreaseInProfitLosses)+")\n") 
+    print(f"Greatest Increase in Profits: {greatestIncreaseMonthInProfitLosses}  (${str(round(greatestIncreaseInProfitLosses))})\n")
+    r.write("Greatest Increase in Profits: "+str(greatestIncreaseMonthInProfitLosses)+"  ($"+str(round(greatestIncreaseInProfitLosses))+")\n") 
 
     #Call to calculate the greatest decrease in the profit and loss
     minimumProfitLossesKey =MinimumProfitLosses(changesToProfitLoss)
@@ -76,6 +76,6 @@ with open(results_txt, 'w') as r:
     minimumIncreaseMonthInProfitLosses = noOfMonths[minimumProfitLossesKey]
 
     #Printing the greatest decrease change in the profit and loss 
-    print(f"Greatest Decrease in Profits: {minimumIncreaseMonthInProfitLosses}  (${str(minimumIncreaseInProfitLosses)})")
-    r.write("Greatest Decrease in Profits: "+ str(minimumIncreaseMonthInProfitLosses)+"  ($"+str(minimumIncreaseInProfitLosses)+")\n") 
+    print(f"Greatest Decrease in Profits: {minimumIncreaseMonthInProfitLosses}  (${str(round(minimumIncreaseInProfitLosses))})")
+    r.write("Greatest Decrease in Profits: "+ str(minimumIncreaseMonthInProfitLosses)+"  ($"+str(round(minimumIncreaseInProfitLosses))+")\n") 
 
